@@ -7,7 +7,7 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
    ConfigModule.forRoot({ isGlobal: true }),
-    MongooseModule.forRoot(process.env.MONGO_URI || 'mongodb+srv://anil19062004_db_user:GvHxB1xpJExwLT6a@cluster0.avtytow.mongodb.net/'),
+    MongooseModule.forRoot(process.env.MONGO_URI || 'mongodb+srv://GvHxB1xpJExwLT6a@cluster0.avtytow.mongodb.net/'),
     ImapModule,
     EmailModule,
   ],
